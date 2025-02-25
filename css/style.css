@@ -1,3 +1,29 @@
 body {
-    background-color: red;
+    background-color: #3b755c;
+    color: #4b3632;
+    font-family:Esteban;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:"Patua One";
+    font-size: 45pt;
+}
+
+header{
+    text-align:center;
+}
+
+#hero,footer{
+    background-color:#2db57b;
+    text-align:center;
+    padding:10px;
+    border: 5px solid #a04535;
+}
+
+#hero img{
+    width:300px;
+}
+
+#bio{
+    text-align:center;
 }
