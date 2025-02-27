@@ -7,6 +7,7 @@ body {
 h1,h2,h3,h4,h5,h6{
     font-family:"Patua One";
     font-size: 45pt;
+    text-align:center;
 }
 
 header{
@@ -26,4 +27,17 @@ header{
 
 #bio{
     text-align:center;
+}
+
+#hobbies ul li {
+    color: red;
+    text-align:center;
+}
+
+#hobbies ul li:nth-child(3n-1){
+    color: rgb(0, 255, 0);
+}
+
+#hobbies ul li:nth-child(3n){
+    color: blue;
 }
