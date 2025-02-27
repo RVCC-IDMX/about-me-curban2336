@@ -23,6 +23,7 @@ header{
 
 #hero img{
     width:300px;
+    max-width: 100%;
 }
 
 #bio{
@@ -40,4 +41,12 @@ header{
 
 #hobbies ul li:nth-child(3n){
     color: blue;
+}
+
+#gallery img{
+    max-width:100%;
+}
+
+#gallery figure{
+    text-align:center;
 }
