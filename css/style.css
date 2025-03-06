@@ -8,6 +8,15 @@ h1,h2,h3,h4,h5,h6{
     font-family:"Patua One";
     font-size: 45pt;
     text-align:center;
+    background-color:#a04535;
+    padding:.3em;
+    margin-left:3em;
+    margin-right:3em;
+    line-height:.65;
+    border: 3px outset #4b3632;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border-top-left-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
 }
 
 header{
@@ -43,10 +52,63 @@ header{
     color: blue;
 }
 
+#gallery{
+    border: 4px solid #a04535;
+    margin-bottom:2rem;
+}
+
 #gallery img{
     max-width:100%;
 }
 
 #gallery figure{
     text-align:center;
+}
+
+#litipsum{
+    border: 4px solid #a04535;
+    margin-bottom:2rem;
+}
+
+#litipsum div{
+    padding:2rem;
+    max-width:60rem;
+    margin: 0 auto;
+}
+
+#litipsum div p{
+    padding:0.3rem 0;
+}
+
+#litipsum h2{
+    color:#3b755c;
+    background-color:#a04535;
+    font-style: italic bold;
+    font-size:3em;
+    padding:.3em;
+    margin-left:5em;
+    margin-right:5em;
+    line-height:.65;
+    border: 3px outset #4b3632;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    text-shadow: 0px 0px 10px rgba(0,0,0,1);
+    border-top-left-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
+}
+
+#litipsum div p:nth-child(2n+1):first-letter{
+    color:#a04535;
+    background-color:#2db57b;
+    float:left;
+    font-style: italic;
+    font-size:3em;
+    padding:.3em;
+    margin-right:.3em;
+    line-height:.65;
+    border: 3px outset #4b3632;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    border-top-left-radius: 0.2em;
+    border-top-right-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
 }
