@@ -178,6 +178,49 @@ header{
     display:grid;
 }
 
+#contact{
+    padding: 1rem;
+    max-width:600px;
+    margin:2rem auto;
+}
+
+#contact label{
+    margin: 0.5rem;
+}
+
+fieldset{
+    border: 2px solid #4b3632;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#contact input, #contact textarea, #contact select, #contact button{
+    padding:.5em;
+    font-size: 1rem;
+}
+
+legend{
+    background-color: #4b3632;
+    color: #2db57b;
+}
+
+#contact ul{
+    list-style:none;
+    padding:0px;
+}
+
+#contact li{
+    margin:1rem;
+}
+
+#contact button{
+    background-color:#4b3632;
+    color:#2db57b;
+    border: 2px solid #a04535;
+    max-width: 400px;
+    justify-self: center;
+    width: 50%;
+}
 
 /* Tablet Size */
 @media  screen and (min-width:60em){
