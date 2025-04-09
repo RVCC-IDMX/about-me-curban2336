@@ -103,6 +103,60 @@
 
     </main>
 
+    <section id="contact">
+        <h2>Contact Us:</h2>
+        <form id="contactForm" name="contactForm" data-netlify="true" method="post">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <div id="formElements">
+                <!-- Name -->
+                 <label for="name">Name(Required)</label>
+                 <input type="text" id="name" name="name" required>
+
+                 <!--Email-->
+                 <label for="email">Email(Required)</label>
+                 <input type="email" id="email" name="email" required>
+
+                 <!--Phone-->
+                 <label for="tel">Phone(Optional)</label>
+                 <input type="tel" id="tel" name="tel">
+
+                 <!--Phone type-->
+                 <label for="phonetype">Phone Type (Optional)</label>
+                 <select id="phonetype" name="phonetype">
+                    <option value="" selected>Select Phone Type</option>
+                    <option value="Mobile">Mobile</option>
+                    <option value="Work">Work</option>
+                    <option value="Home">Home</option>
+                 </select>
+
+                 <!-- Message -->
+                  <label for="message">Message (Optional)</label>
+                  <textarea id="message" name="message" rows="8" placeholder="Put Message Here!"></textarea>
+
+                  <!-- Reply -->
+                   <fieldset>
+                    <legend>Would You Like A Reply?</legend>
+
+                    <ul>
+                        <li>
+                            <input type="radio" id="message-yes" name="reply" value="Yes">
+                            <label for="message-yes">Yes, a reply would be nice.</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="message-no" name="reply" value="No" checked>
+                            <label for="message-no">No, thanks.</label>
+                        </li>
+                    </ul>
+                   </fieldset>
+
+                   <!-- Submit -->
+                    <button type="submit">Send</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
     <footer>
         ©2025 - Christopher Urban
     </footer>

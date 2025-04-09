@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Basic Transistions</h1>
+    <div id="test">Test Div</div>
+
+    <style>
+        #test{
+            width: 140px;
+            aspect-ratio: 2;
+            background-color: green;
+            transition-duration: 1s;
+            transition-delay:0s;
+            transition-timing-function: linear;
+            border: 1px solid black;
+            border-radius: 0%;
+            margin-left: 0px;
+            padding: 5px;
+        }
+        #test:hover{
+            transition-duration: 1s;
+            transition-delay: 0.2s;
+            transition-timing-function: ease-in-out;
+            background-color: lightseagreen;
+            color: white;
+            width:100px;
+            aspect-ratio: 1;
+            border: 3px solid black;
+            border-radius: 10%;
+            margin-left: 20px;
+            padding: 10px;
+        }
+    </style>
+
+    <button id="testButton">Make It Happen!</button>
+
+    <style>
+        #testButton:hover{
+            background-color: lightgray;
+            animation: on-fire;
+            animation-duration: 3s;
+            animation-fill-mode: both;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+        }
+
+        @keyframes on-fire {
+            0%{
+                background-color:lightgray;
+            }
+            33%{
+                background-color:yellow;
+                box-shadow: 0px 0px 0px 0px red inset;
+            }
+            66%{
+                box-shadow: 0px 0px 4px 5px red inset;
+            }
+            100%{
+                background-color:yellow;
+                box-shadow: 0px 0px 4px 5px red inset,
+                0px 0px 4px 5px orange;
+            }
+        }
+    </style>
+</body>
+</html>

@@ -50,6 +50,11 @@ header{
     width: 80%;
 }
 
+#video h2{
+    max-width:100%;
+    margin:0.1em;
+}
+
 .videowrapper{
     position: relative;
     padding-bottom: 56.25%;
@@ -68,6 +73,10 @@ header{
     width: 100%;
 }
 
+.videowrapper h2{
+    margin:0.1em;
+}
+
 #hobbies{
     display: flex;
     flex-direction:column;
@@ -79,7 +88,7 @@ header{
 }
 
 #hobbies ul li {
-    color: red;
+    color: rgb(150,0,0);
     text-align:center;
 }
 
@@ -88,7 +97,7 @@ header{
 }
 
 #hobbies ul li:nth-child(3n){
-    color: blue;
+    color: rgb(10,10,180);
 }
 
 #gallery{
@@ -145,7 +154,7 @@ header{
 }
 
 #litipsum div p:nth-child(2n+1):first-letter{
-    color:#a04535;
+    color:#4b3632;
     background-color:#2db57b;
     float:left;
     font-style: italic;
@@ -159,6 +168,14 @@ header{
     border-top-left-radius: 0.2em;
     border-top-right-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
+}
+
+#contact h2{
+    margin:0.1em;
+}
+
+#formElements{
+    display:grid;
 }
 
 
