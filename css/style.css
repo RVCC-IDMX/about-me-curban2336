@@ -205,7 +205,7 @@ fieldset{
 
 legend{
     background-color: #4b3632;
-    color: #2db57b;
+    color: #00f58d;
 }
 
 #contact ul{
@@ -219,7 +219,7 @@ legend{
 
 #contact button{
     background-color:#4b3632;
-    color:#2db57b;
+    color:#00f58d;
     border: 2px solid #a04535;
     max-width: 400px;
     justify-self: center;

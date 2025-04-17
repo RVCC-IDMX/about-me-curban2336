@@ -14,7 +14,7 @@ main{
 }
 /* navbar */
 .navbar{
-    background-color:#4b3632;
+    background-color: #3b755c;
     color: #00f58d;
     display:flex;
     flex-direction:column;
@@ -42,7 +42,7 @@ main{
     padding:.3em;
     margin-left:1em;
     margin-right:1em;
-    border: 3px outset #3b755c;
+    border: 3px outset #4b3632;
     line-height: 3rem;
 }
 
