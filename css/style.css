@@ -61,6 +61,7 @@ header{
     padding-top: 25px;
     height: 0px;
     border: 6px outset #a04535;
+    background-color: #4b3632;
 }
 
 .videowrapper iframe{
@@ -91,7 +92,7 @@ header{
 
 #hobbies ul li {
     color: rgb(150,0,0);
-    text-align:center;
+    text-align:left;
 }
 
 #hobbies ul li:nth-child(3n-1){
