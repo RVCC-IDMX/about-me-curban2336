@@ -35,6 +35,8 @@ header{
 #hero img{
     width:300px;
     max-width: 100%;
+    border: 1px solid #2db57b;
+    border-radius: 20px;
 }
 
 #bio{
@@ -142,6 +144,14 @@ header{
     background-color: #2db57b;
 }
 
+#imageHover img{
+    display: block;
+    width: 300px;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
 #imageHover div{
     padding:2rem;
     max-width:60rem;
@@ -149,10 +159,10 @@ header{
 }
 
 #imageHover div p{
-    padding:0.3rem 0;
+    padding:0.3rem;
 }
 
-#imageHover h2{
+#imageHover h2, #imageHover div h2{
     color:black;
     background-color:#a04535;
     font-style: italic bold;
@@ -181,6 +191,61 @@ header{
     border-top-left-radius: 0.2em;
     border-top-right-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
+}
+
+#imageHover .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+  
+.image {
+    display: block;
+    width: 800px;
+    height: auto;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 280px;
+    height: 390px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: red;
+}
+
+.container .overlay:hover {
+    opacity: 1;
+}
+
+.zoom1{
+    display: block;
+}
+
+.zoom1 figure{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.zoom1 figure img{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom1 figure:hover img{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
 
 #contact h2{
@@ -253,9 +318,35 @@ legend{
         width: 100%;
     }
 
-    #litipsum div{
+    #imageHover div{
         max-width: 100%;
-        columns: 20rem;
+    }
+
+    #imageHover img{
+        display: block;
+        width: 500px;
+        height: auto;
+        justify-self: left;
+        align-self: center;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 30px;
+        bottom: 0;
+        left: 0;
+        right: 60px;
+        width: 70%;
+        height: 84%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: red;
+    }
+
+    .zoom1 figure{
+        width: 500px;
+        height: 600px;
+        overflow: hidden;
     }
 }
 
@@ -274,5 +365,21 @@ legend{
     }
     #video{
         width: 70%;
+    }
+    #imageHover .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .overlay {
+        position: absolute;
+        top: 30px;
+        bottom: 0;
+        left: 0;
+        right: 60px;
+        width: 70%;
+        height: 65%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: red;
     }
 }

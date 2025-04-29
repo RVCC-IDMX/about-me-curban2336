@@ -21,11 +21,20 @@
                 <img src="img/Favicon.svg" class="logo-img" alt="circle with a C and U in it">
                 <h1>Web Dev I</h1>
             </div>
+            <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+            <label for="nav__checkbox" class="nav__toggle">
+                <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                    <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+                </svg>
+                <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                    <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                </svg>
+            </label>
             <div class="navbar-links">
                 <ul>
                     <li><a class="nav-links" href="#bio">Bio</a></li>
                     <li><a class="nav-links" href="#gallery">Gallery</a></li>
-                    <li><a class="nav-links" href="#litipsum">Blog</a></li>
+                    <li><a class="nav-links" href="#imageHover">Blog</a></li>
                     <li><a class="nav-links" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -36,7 +45,7 @@
         <!--important page content-->
         <section id="hero">
             <!--hero selection: image, name, and address-->
-            <img src="img/avataaars.png" alt="Avatar picture of me">
+            <img src="img/Portrait.jpg" alt="Picture of me">
             <div>
                 <p>Christopher Urban</p>
                 <p>Bound Brook, NJ</p>
@@ -102,15 +111,67 @@
 
             <div>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur orci ut eros ultricies pellentesque. Duis pulvinar at eros at consectetur. Praesent tempus nulla nisi, et accumsan arcu iaculis ac. Integer egestas lacus urna, eget tincidunt turpis vestibulum tristique. Nullam at lobortis massa, et tincidunt arcu. Vivamus tempus erat non justo elementum lobortis vel nec magna. Aenean mattis velit eu gravida aliquet. Duis elementum diam tempor odio bibendum tincidunt.</p>
+                <p>Ever wonder how websites add those special little effects on their images? It’s ok, I did too, so I did some digging and found out how some effects are done through CSS. The first and most important step is creating the normal CSS section for your elements, and then a subsequent :hover version of the element. This will actually establish the two stages that the element will transition between when hovering on or removing the cursor from the area.</p>
 
-                <p>Mauris luctus ultrices urna, eu lacinia dui hendrerit id. Suspendisse et venenatis ante. Nam tempor ante vel nisi volutpat, et faucibus quam viverra. Maecenas mattis orci id est volutpat elementum. Nullam mattis lacus sit amet ligula varius, eget dictum sem suscipit. Integer eget mi porta, blandit enim nec, faucibus felis. Fusce tempus rhoncus mauris ut consequat.</p>
+                <p>Once both of those are established, you can begin making your transition stages. The default is the normal section, the one without :hover. This will be what CSS defaults to when you aren’t hovering over it. For a basic hover effect, here is an image that has an overlaid red fill with a little message. This was done by using the hover effect on a div that is in the same parent object of the image, but lower in the hierarchy.</p>
+
+            </div>
+
+            <div class="grid">
+            <div class="container">
+                <img src="./img/Portrait.jpg" alt="Picture of me in a clone trooper helmet painted red." class="image">
+                <div class="overlay">
+                    <div class="text"></div>
+                </div>
+            </div>
+
+            <div>
+                <img src="./img/Overlay.png" alt="snippet of the code used to make the hover effect.">
+            </div>
+        </div>
                     
-                <p>Pellentesque lacinia condimentum enim non faucibus. Vivamus aliquet urna quis massa commodo aliquam. Nullam massa ligula, porttitor quis mollis sed, congue et ligula. Maecenas id nibh porta, iaculis tellus sit amet, lobortis enim. Morbi lobortis nunc vitae nisl fringilla cursus. Vivamus condimentum ornare ipsum in mattis. Praesent pulvinar congue dui, ac sodales urna fermentum ut. Duis blandit turpis et vulputate bibendum. Quisque non egestas tortor. Duis dignissim neque turpis, quis maximus ligula laoreet vitae. Donec facilisis lectus condimentum ex faucibus, in ornare mi cursus. In dignissim velit orci, vel cursus leo tincidunt ut. Curabitur consequat nec diam vitae convallis. Vestibulum maximus nisl et volutpat vehicula. Etiam commodo sapien sit amet tristique bibendum.</p>
+            <div>
+                <p>Although this isn’t really an IMAGE hover effect. CSS has ways of applying effects directly on the image itself through the figure element, this is done using CSS transitions! CSS has a plethora of ways to alter images to fit your needs. CSS can allow you to zoom, transform, apply filters, and apply special effects.</p>
                     
-                <p>Aenean ac molestie ex. Aenean at mauris mauris. Phasellus tempor urna tortor, vitae posuere diam pellentesque sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed urna tortor, laoreet at elit ac, aliquam blandit ligula. Pellentesque elit ante, lacinia nec sem eu, pellentesque gravida eros. Sed molestie sit amet lectus sed auctor. Suspendisse sollicitudin eros sed leo molestie, ac tempor sem accumsan.</p>
+                <p>The first example here shows zooming in and out. This is done using transform to set scale and transition to set a more specialized ease-in-out transition. Interestingly enough, this is done to the figure element the image is attached to get the desired zoom.</p>
+
+            </div>
+
+            <h2>Zoom In</h2>
+            <div class="zoom1">
+                <figure>
+                    <img src="./img/Portrait.jpg" alt="Picture of me in a clone trooper helmet painted red.">
+                </figure>
+            </div>
+
+            <div class="zoom2">
+                <figure>
+                    <img src="./img/Portrait.jpg" alt="Picture of me in a clone trooper helmet painted red.">
+                    <figcaption>Zoom Out</figcaption>
+                </figure>
+            </div>
+
+            <div>
                     
-                <p>Suspendisse vestibulum nulla ipsum, eu tincidunt lorem molestie at. Nulla tristique rhoncus dui ac tristique. In sit amet eros at massa maximus consectetur. Nam rhoncus, erat a elementum convallis, odio sem dignissim magna, at dignissim orci odio id enim. Nam vehicula pulvinar suscipit. Duis accumsan lobortis ex, a viverra mauris ultrices eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus tincidunt maximus diam, et bibendum nisi lacinia vitae. Nam efficitur euismod placerat.</p>
+                <p>A similar method is used for the rotational effect as seen below. Here, we are using transform to set not only the scale, but also the degrees of rotation that the image is supposed to be at with and without hovering. Fun fact, you can also modify margins through normal transitions to get sliding effects!</p>
+
+            </div>
+
+            <div>
+
+                <p>Next we have filters, which is my personal favorite. This utilizes filter and can have many different keywords used to alter an image. Grayscale() can be used with a percentage argument to make images more or less black-and-white. sepia() with a percentage argument can make an image look old-timey and yellow. You can invert() colorschemes or even blur() them. hue-rotate() takes degree arguments and produces interesting color palettes.</p>
+
+            </div>
+
+            <div>
+
+                <p>That brings us to special effects! Here, we get to use the animation and keyframe functions of CSS to create little hover animations for our images. The first example is a small flash effect, which animation already has a built in keyword for! It takes a little set-up but once that’s done all you need to do is test out the time arguments! The same is true for the shine animation, but the prep-work for this is a lot more involved. This uses a gradient, skewing, and the ::before to create the shimmer along the image.</p>
+
+            </div>
+
+            <div>
+
+                <p>These hover effects can also be stacked on top of each other. I already teased this back with the rotate images but you can zoom and filter, filter and rotate, even give special effects and filter! With such a wide array of possibilities, you should have no problem getting the right effect for you!</p>
 
             </div>
 
@@ -173,7 +234,7 @@
     </section>
 
     <footer>
-        ©2025 - Christopher Urban
+        ©2025 - Christopher Urban  Repo: https://github.com/RVCC-IDMX/about-me-curban2336
     </footer>
 
 </body>

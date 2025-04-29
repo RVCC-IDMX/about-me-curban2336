@@ -10,5 +10,8 @@
 ## Color Swatch
 
 ## Citations
-
+Hover Effect Demos: https://codepen.io/nxworld/pen/ZYNOBZ
+Basic Overlay: https://www.w3schools.com/howto/howto_css_image_overlay.asp
+MDN Filter Guide: https://developer.mozilla.org/en-US/docs/Web/CSS/filter 
 ## Liscense
+Rights Reserved

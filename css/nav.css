@@ -21,6 +21,48 @@ main{
     font-size: 1.5rem;
     margin-bottom:1rem;
 }
+
+.navbar .nav__toggle{
+    position: absolute;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    right: 0;
+}
+
+.navbar svg{
+    width: 4rem;
+    fill: #4b3632;
+}
+
+.navbar .close{
+    display: none;
+}
+
+.navbar .menu{
+    margin-top: 1.7rem;
+}
+
+.navbar .close{
+    margin-top: 1.4rem;
+}
+
+.navbar .nav__checkbox{
+    display: none;
+}
+
+/* Hamburger Toggle */
+#nav__checkbox:checked ~ .navbar-links ul {
+    display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+    display: block;
+  }
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+    display: none;
+}
+
 /* logo */
 .logo{
     display: flex;
@@ -28,13 +70,9 @@ main{
 }
 
 .logo-img{
-    height:100px;
-    width:100px;
+    height:60px;
+    width:60px;
     margin-left: 1rem;
-}
-
-.logo-title{
-    font-size:2em;
 }
 
 .logo h1{
@@ -44,6 +82,7 @@ main{
     margin-right:1em;
     border: 3px outset #4b3632;
     line-height: 3rem;
+    font-size: 2rem;
 }
 
 /* navigation links */
@@ -55,6 +94,7 @@ main{
 .navbar-links ul{
     padding:0;
     text-align:center;
+    display: none;
 }
 
 /*style all a tags in header and then on hover */
@@ -74,8 +114,31 @@ main{
 }
 
 /* media query for non-mobile navbar min-width set to the width of nav elements such that no text wraps */
+@media screen and (min-width:40em){
+    .logo-img{
+        height:100px;
+        width:100px;
+    }
+    
+    .logo h1{
+        font-size: 45pt;
+    }
 
-@media screen and (min-width:65em){
+    .navbar svg{
+        width: 5rem;
+    }
+
+    .navbar .menu{
+        margin-top: 3rem;
+    }
+    
+    .navbar .close{
+        margin-top: 2.7rem;
+    }
+}
+
+
+@media screen and (min-width:100em){
     .navbar{
         flex-direction:row;
         justify-content: space-between;
@@ -92,5 +155,9 @@ main{
     }
     .navbar-links a{
         font-size:2em
+    }
+
+    .navbar .nav__toggle{
+        display: none;
     }
 }
