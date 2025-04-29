@@ -135,6 +135,10 @@ main{
     .navbar .close{
         margin-top: 2.7rem;
     }
+
+    .navbar-links a{
+        font-size: 1.5em;
+    }
 }
 
 
@@ -147,6 +151,12 @@ main{
         display:flex;
         flex-direction:row;
     }
+
+    #nav__checkbox:checked ~ .navbar-links ul {
+        display:flex;
+        flex-direction:row;
+    }
+
     .navbar-links{
         display:flex;
         align-content:center;
