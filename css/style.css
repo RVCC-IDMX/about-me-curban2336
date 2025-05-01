@@ -1,3 +1,4 @@
+/* Basic Page Structure */
 body {
     background-color: #00f58d;
     color: black;
@@ -25,6 +26,9 @@ header{
     
 }
 
+
+/* Portrait and Footer */
+
 #hero,footer{
     background-color:#2db57b;
     text-align:center;
@@ -39,6 +43,9 @@ header{
     border-radius: 20px;
 }
 
+
+/* Bio */
+
 #bio{
     text-align:center;
 }
@@ -46,6 +53,9 @@ header{
 #bio h2{
     margin:0.5ex;
 }
+
+
+/* Embedded Video */
 
 #video{
     margin: 0 auto;
@@ -56,6 +66,9 @@ header{
     max-width:100%;
     margin:0.1em;
 }
+
+
+/* Video Wrapped Frame */
 
 .videowrapper{
     position: relative;
@@ -79,6 +92,9 @@ header{
 .videowrapper h2{
     margin:0.1em;
 }
+
+
+/* Hobbies */
 
 #hobbies{
     display: flex;
@@ -104,6 +120,9 @@ header{
 #hobbies ul li:nth-child(3n){
     color: rgb(10,10,180);
 }
+
+
+/* Image Gallery */
 
 #gallery{
     border: 4px solid #a04535;
@@ -135,6 +154,9 @@ header{
     font-size: 2rem;
 }
 
+
+/* Image Hover Blog */
+
 #imageHover{
     border: 4px solid #a04535;
     margin-bottom:2rem;
@@ -145,11 +167,8 @@ header{
 }
 
 #imageHover img{
-    
     width: 300px;
     height: auto;
-    /*justify-self: center;
-    align-self: center;*/
 }
 
 #imageHover div{
@@ -193,6 +212,9 @@ header{
     border-bottom-right-radius: 0.2em;
 }
 
+
+/* Image Hover Image Effects */
+
 #imageHover .grid{
     display:grid;
     grid-template-columns: 1fr;
@@ -211,6 +233,9 @@ header{
     height: auto;
 }
 
+
+/* Overlay */
+
 .overlay {
     position: absolute;
     top: 30px;
@@ -227,6 +252,9 @@ header{
 .container .overlay:hover {
     opacity: 1;
 }
+
+
+/* Zoom In & Out */
 
 #imageHover .zoom1, #imageHover .zoom2{
     display: flex;
@@ -265,6 +293,9 @@ header{
 	transform: scale(1);
 }
 
+
+/* Spin */
+
 #imageHover .spin{
     display: flex;
     padding: 0;
@@ -291,7 +322,9 @@ header{
     transform: rotate(0) scale(1);
 }
 
+
 /* Filters */
+
 #imageHover .gray, #imageHover .sepia, #imageHover .invert, #imageHover .blur, #imageHover .hrotate, #imageHover .flash, #imageHover .shine, #imageHover .combo{
     display: flex;
     padding: 0;
@@ -301,6 +334,7 @@ header{
 
 
 /* GrayScale Filter */
+
 .gray figure{
     width: 300px;
     height: 400px;
@@ -320,7 +354,9 @@ header{
     filter: grayscale(0);
 }
 
+
 /* Sepia Filter */
+
 .sepia figure{
     width: 300px;
     height: 400px;
@@ -340,7 +376,9 @@ header{
     filter: sepia(0);
 }
 
+
 /* Invert Filter */
+
 .invert figure{
     width: 300px;
     height: 400px;
@@ -360,7 +398,9 @@ header{
     filter: Invert(0);
 }
 
+
 /* Blur Filter */
+
 .blur figure{
     width: 300px;
     height: 400px;
@@ -380,7 +420,9 @@ header{
     filter: blur(0);
 }
 
+
 /* Hue-Rotate Filter */
+
 .hrotate figure{
     width: 300px;
     height: 400px;
@@ -400,7 +442,9 @@ header{
     filter: hue-rotate(0);
 }
 
+
 /* Flash */
+
 .flash figure{
     width: 300px;
     height: 400px;
@@ -431,7 +475,9 @@ header{
 	}
 }
 
+
 /* Shine */
+
 .shine figure{
     width: 300px;
     height: 400px;
@@ -471,7 +517,9 @@ header{
 	}
 }
 
+
 /* Combo */
+
 .combo figure{
     width: 300px;
     height: 400px;
@@ -519,6 +567,9 @@ header{
     -webkit-animation: shine .75s;
 	animation: shine .75s;
 }
+
+
+/* Contact Form */
 
 #contact h2{
     margin:0.1em;
@@ -573,7 +624,9 @@ legend{
     width: 50%;
 }
 
+
 /* Tablet Size */
+
 @media  screen and (min-width:60em){
     #gallery figure{
         display:grid;
@@ -624,6 +677,8 @@ legend{
 }
 
 
+/* Desktop Size */
+
 @media screen and (min-width:100em){
     #gallery{
         display:grid;
@@ -650,7 +705,7 @@ legend{
         left: 8px;
         right: 60px;
         width: 85%;
-        height: 65%;
+        height: 55%;
         opacity: 0;
         transition: .5s ease;
         background-color: red;

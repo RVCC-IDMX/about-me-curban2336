@@ -2,17 +2,26 @@
 html{
     scroll-behavior:smooth;
 }
+
+
 /* get rid of padding and sizing on body so header is at top */
+
 body{
     box-sizing: border-box;
     padding:0;
     margin:0;
 }
+
+
 /* add some padding back to rest of page */
+
 main{
     padding:2vw;
 }
+
+
 /* navbar */
+
 .navbar{
     background-color: #3b755c;
     color: #00f58d;
@@ -50,7 +59,9 @@ main{
     display: none;
 }
 
+
 /* Hamburger Toggle */
+
 #nav__checkbox:checked ~ .navbar-links ul {
     display: block;
 }
@@ -63,7 +74,9 @@ main{
     display: none;
 }
 
+
 /* logo */
+
 .logo{
     display: flex;
     align-items:center;
@@ -85,7 +98,9 @@ main{
     font-size: 2rem;
 }
 
+
 /* navigation links */
+
 .navbar-links li{
     list-style: none;
     text-align:center;
@@ -97,7 +112,9 @@ main{
     display: none;
 }
 
+
 /*style all a tags in header and then on hover */
+
 .navbar-links a{
     color:#00f58d;
     padding:0.5rem 0.5rem;
@@ -113,7 +130,9 @@ main{
     background-color: #00f58d;
 }
 
+
 /* media query for non-mobile navbar min-width set to the width of nav elements such that no text wraps */
+
 @media screen and (min-width:40em){
     .logo-img{
         height:100px;
