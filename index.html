@@ -9,21 +9,32 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/nav.css">
+
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
     <title>About Me</title>
 </head>
 <body>
     <header>
-        <!-- the header shows logo and page title-->
+        <!-- the header shows logo, page title, and navbar-->
         <nav class="navbar">
             <div class="logo">
-                <img src="img/logo-96X96.svg" class="logo-img" alt="Blue origami logo">
+                <img src="img/Favicon.svg" class="logo-img" alt="circle with a C and U in it">
                 <h1>Web Dev I</h1>
             </div>
+            <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+            <label for="nav__checkbox" class="nav__toggle">
+                <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                    <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+                </svg>
+                <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                    <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                </svg>
+            </label>
             <div class="navbar-links">
                 <ul>
                     <li><a class="nav-links" href="#bio">Bio</a></li>
                     <li><a class="nav-links" href="#gallery">Gallery</a></li>
-                    <li><a class="nav-links" href="#litipsum">Blog</a></li>
+                    <li><a class="nav-links" href="#imageHover">Blog</a></li>
                     <li><a class="nav-links" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -34,24 +45,27 @@
         <!--important page content-->
         <section id="hero">
             <!--hero selection: image, name, and address-->
-            <img src="img/avataaars.png" alt="Avatar picture of me">
+            <img src="img/Portrait.jpg" alt="Picture of me">
             <div>
                 <p>Christopher Urban</p>
                 <p>Bound Brook, NJ</p>
             </div>
         </section>
 
+        <!--Bio: about me section-->
         <section id="bio">
             <div>
-                <p>I want to be...</p>
-                <p>A Game Developer!</p>
-                <p>I love to work at night while listening to music.</p>
-                <p>In my free time I like to write sci-fi and work on my personal games!</p>
-                <p>Check out some of the Global Game Jams I've worked on!</p>
+                <p>Hey, my name is Chris, and I dream of becoming a Game Developer. For most of my life, I have been enamored with </p>
+                <p>games of all kinds for the narratives they tell and the experiences they create for players. I want to create </p>
+                <p>content that speaks to someone on an emotional level or that people can find happiness with. It is for these </p>
+                <p>reasons that I spend lots of my free time working on developing games on my own. Whenever I’m not doing that, I </p>
+                <p>work on writing my Sci-Fi novels or read one of the many books at my disposal. I’ve participated in many Game </p>
+                <p>Jams to keep my skills sharp. Here are some of the Global Game Jams I have participated in. </p>
                 <p><a href="https://v3.globalgamejam.org/users/christopher-urban">My Jams!</a></p>
             </div>
         </section>
 
+        <!--video: my current reel of portfolio games-->
         <section id="video">
             <h2>My Reel of Games</h2>
             <div class="videowrapper">
@@ -59,63 +73,252 @@
             </div>
         </section>
 
+        <!--Hobbies: what I do aside from work-->
         <section id="hobbies">
             <h2>My Hobbies</h2>
             
             <ul>
-                <li>Building and painting wargame models!</li>
-                <li>Playing D&D</li>
-                <li>Writing</li>
-                <li>Reading</li>
-                <li>Magic: The Gathering</li>
+                <li>Wargames: I love building and painting wargame models, particularly my Star Wars: Legion Battle Droids. I love the zen feeling I get from carefully putting the models together, then painting them in the specific color scheme of my army. </li>
+                <li>D&D: Or really any TTRPG, I love the immersive stories they provide. The ability to get together with friends and star in a story where they can do anything really keeps the creative juices flowing!</li>
+                <li>Writing/Reading: I have been writing two different Science Fiction books for some time now. Whenever I’m not, I am usually reading Warhammer 40k novels or one of the many books written by J. R. R. Tolkien. </li>
+                <li>Magic: The Gathering: Hands down my favorite card game to date. I love the freedom in deck building, the wide variety of ways to play, and the myriad of formats the game has. I am never one to turn down a game of Magic!</li>
             </ul>
         </section>
 
+        <!--Gallery: where I show pictures of my hobbies or work-->
         <section id="gallery">
 
             <h2>Photo Gallery</h2>
-
-            
-
             <figure>
-                <img src="./img/Destiny.png" alt="A screenshot of me and my friend in Destiny 2 in front of a landscape.">
+                <img src="./img/Destiny.png" loading="lazy" alt="A screenshot of me and my friend in Destiny 2 in front of a landscape.">
                 <figcaption>Me and my friend playing Destiny 2.</figcaption>
             </figure>
 
             <figure>
-                <img src="./img/Heavy.png" alt="A robot I modeled myself for a game I am developing.">
+                <img src="./img/Heavy.png" loading="lazy" alt="A robot I modeled myself for a game I am developing.">
                 <figcaption>A robot I modeled for a game I'm developing.</figcaption>
             </figure>
 
             <figure>
-                <img src="./img/B2-640w.jpg" alt="Hand-painted model of a Star Wars Legion B2 model. Painted blue and silver.">
+                <img src="./img/B2-640w.jpg" loading="lazy" alt="Hand-painted model of a Star Wars Legion B2 model. Painted blue and silver.">
                 <figcaption>A B2 model fully painted.</figcaption>
             </figure>
 
         </section>
 
-        <article id="litipsum">
+        <!--Blog: Where I talk about image hover effects-->
+        <article id="imageHover">
 
-            <h2>Litipsum</h2>
+            <h2>CSS Image Hover Effects</h2>
 
             <div>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur orci ut eros ultricies pellentesque. Duis pulvinar at eros at consectetur. Praesent tempus nulla nisi, et accumsan arcu iaculis ac. Integer egestas lacus urna, eget tincidunt turpis vestibulum tristique. Nullam at lobortis massa, et tincidunt arcu. Vivamus tempus erat non justo elementum lobortis vel nec magna. Aenean mattis velit eu gravida aliquet. Duis elementum diam tempor odio bibendum tincidunt.</p>
+                <p>Ever wonder how websites add those special little effects on their images? It’s ok, I did too, so I did some digging and found out how some effects are done through CSS. The first and most important step is creating the normal CSS section for your elements, and then a subsequent :hover version of the element. This will actually establish the two stages that the element will transition between when hovering on or removing the cursor from the area.</p>
 
-                <p>Mauris luctus ultrices urna, eu lacinia dui hendrerit id. Suspendisse et venenatis ante. Nam tempor ante vel nisi volutpat, et faucibus quam viverra. Maecenas mattis orci id est volutpat elementum. Nullam mattis lacus sit amet ligula varius, eget dictum sem suscipit. Integer eget mi porta, blandit enim nec, faucibus felis. Fusce tempus rhoncus mauris ut consequat.</p>
-                    
-                <p>Pellentesque lacinia condimentum enim non faucibus. Vivamus aliquet urna quis massa commodo aliquam. Nullam massa ligula, porttitor quis mollis sed, congue et ligula. Maecenas id nibh porta, iaculis tellus sit amet, lobortis enim. Morbi lobortis nunc vitae nisl fringilla cursus. Vivamus condimentum ornare ipsum in mattis. Praesent pulvinar congue dui, ac sodales urna fermentum ut. Duis blandit turpis et vulputate bibendum. Quisque non egestas tortor. Duis dignissim neque turpis, quis maximus ligula laoreet vitae. Donec facilisis lectus condimentum ex faucibus, in ornare mi cursus. In dignissim velit orci, vel cursus leo tincidunt ut. Curabitur consequat nec diam vitae convallis. Vestibulum maximus nisl et volutpat vehicula. Etiam commodo sapien sit amet tristique bibendum.</p>
-                    
-                <p>Aenean ac molestie ex. Aenean at mauris mauris. Phasellus tempor urna tortor, vitae posuere diam pellentesque sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed urna tortor, laoreet at elit ac, aliquam blandit ligula. Pellentesque elit ante, lacinia nec sem eu, pellentesque gravida eros. Sed molestie sit amet lectus sed auctor. Suspendisse sollicitudin eros sed leo molestie, ac tempor sem accumsan.</p>
-                    
-                <p>Suspendisse vestibulum nulla ipsum, eu tincidunt lorem molestie at. Nulla tristique rhoncus dui ac tristique. In sit amet eros at massa maximus consectetur. Nam rhoncus, erat a elementum convallis, odio sem dignissim magna, at dignissim orci odio id enim. Nam vehicula pulvinar suscipit. Duis accumsan lobortis ex, a viverra mauris ultrices eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus tincidunt maximus diam, et bibendum nisi lacinia vitae. Nam efficitur euismod placerat.</p>
+                <p>Once both of those are established, you can begin making your transition stages. The default is the normal section, the one without :hover. This will be what CSS defaults to when you aren’t hovering over it. For a basic hover effect, here is an image that has an overlaid red fill with a little message. This was done by using the hover effect on a div that is in the same parent object of the image, but lower in the hierarchy.</p>
 
+            </div>
+
+            <!--Overlay Effect-->
+            <div class="grid">
+                <div class="container">
+                    <img src="./img/Portrait.jpg" loading="lazy" alt="Picture of me in a clone trooper helmet painted red." class="image">
+                    <div class="overlay">
+                        <div class="text"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./img/Overlay.png" loading="lazy" alt="Snippet of the code used to make the hover effect.">
+                </div>
+            </div>
+                    
+            <div>
+                <p>Although this isn’t really an IMAGE hover effect. CSS has ways of applying effects directly on the image itself through the figure element, this is done using CSS transitions! CSS has a plethora of ways to alter images to fit your needs. CSS can allow you to zoom, transform, apply filters, and apply special effects.</p>
+                    
+                <p>The first example here shows zooming in and out. This is done using transform to set scale and transition to set a more specialized ease-in-out transition. Interestingly enough, this is done to the figure element the image is attached to get the desired zoom.</p>
+
+            </div>
+
+            <!--Zoom Effect-->
+            <h2>Zoom In & Out</h2>
+            <div class="grid">
+                <div class="zoom1">
+                    <figure>
+                        <img src="./img/Portrait.jpg" loading="lazy" alt="Picture of me in a clone trooper helmet painted red.">
+                    </figure>
+                </div>
+
+                <div class="zoom2">
+                    <figure>
+                        <img src="./img/Portrait.jpg" loading="lazy" alt="Picture of me in a clone trooper helmet painted red.">
+                    </figure>
+                </div>
+
+                <div>
+                    <img src="./img/Zoom.png" loading="lazy" alt="Code snippet of the zoom effects">
+                </div>
+            </div>
+
+            <div>
+                    
+                <p>A similar method is used for the rotational effect as seen below. Here, we are using transform to set not only the scale, but also the degrees of rotation that the image is supposed to be at with and without hovering. Fun fact, you can also modify margins through normal transitions to get sliding effects!</p>
+
+            </div>
+
+            <!--Rotate Effect-->
+            <h2>Rotate</h2>
+            <div class="grid">
+                <div class="spin">
+                    <figure>
+                        <img src="./img/Portrait.jpg" loading="lazy" alt="Picture of me in a clone trooper helmet painted red.">
+                    </figure>
+                </div>
+
+                <div>
+                    <img src="./img/Spin.png" loading="lazy" alt="Code snippet of the rotate effect">
+                </div>
+            </div>
+
+            <div>
+
+                <p>Next we have filters, which is my personal favorite. This utilizes filter and can have many different keywords used to alter an image. Grayscale() can be used with a percentage argument to make images more or less black-and-white. sepia() with a percentage argument can make an image look old-timey and yellow. You can invert() colorschemes or even blur() them. hue-rotate() takes degree arguments and produces interesting color palettes.</p>
+
+            </div>
+
+            <!--Grayscale Effect-->
+            <h2>Grayscale</h2>
+            <div class="grid">
+                <div class="gray">
+                    <figure>
+                        <img src="./img/Portrait.jpg" loading="lazy" alt="Picture of me in a clone trooper helmet painted red.">
+                    </figure>
+                </div>
+
+                <div>
+                    <img src="./img/Grayscale.png" loading="lazy" alt="Code snippet of the grayscale effect">
+                </div>
+            </div>
+
+            <!--Sepia Effect-->
+            <h2>Sepia</h2>
+            <div class="grid">
+                <div class="sepia">
+                    <figure>
+                        <img src="./img/Portrait.jpg" loading="lazy" alt="Picture of me in a clone trooper helmet painted red.">
+                    </figure>
+                </div>
+
+                <div>
+                    <img src="./img/Sepia.png" loading="lazy" alt="Code snippet of the sepia effect">
+                </div>
+            </div>
+
+            <!--Color Inversion Effect-->
+            <h2>Invert</h2>
+            <div class="grid">
+                <div class="invert">
+                    <figure>
+                        <img src="./img/Portrait.jpg" loading="lazy" alt="Picture of me in a clone trooper helmet painted red.">
+                    </figure>
+                </div>
+
+                <div>
+                    <img src="./img/Invert.png" loading="lazy" alt="Code snippet of the invert effect">
+                </div>
+            </div>
+
+            <!--Blur Effect-->
+            <h2>Blur</h2>
+            <div class="grid">
+                <div class="blur">
+                    <figure>
+                        <img src="./img/Portrait.jpg" loading="lazy" alt="Picture of me in a clone trooper helmet painted red.">
+                    </figure>
+                </div>
+
+                <div>
+                    <img src="./img/Blur.png" loading="lazy" alt="Code snippet of the blur effect">
+                </div>
+            </div>
+
+            <!--Hue Rotate Effect-->
+            <h2>Hue-Rotate</h2>
+            <div class="grid">
+                <div class="hrotate">
+                    <figure>
+                        <img src="./img/Portrait.jpg" loading="lazy" alt="Picture of me in a clone trooper helmet painted red.">
+                    </figure>
+                </div>
+
+                <div>
+                    <img src="./img/hrotate.png" loading="lazy" alt="Code snippet of the hue-rotate effect">
+                </div>
+            </div>
+
+            <div>
+
+                <p>That brings us to special effects! Here, we get to use the animation and keyframe functions of CSS to create little hover animations for our images. The first example is a small flash effect, which animation already has a built in keyword for! It takes a little set-up but once that’s done all you need to do is test out the time arguments! The same is true for the shine animation, but the prep-work for this is a lot more involved. This uses a gradient, skewing, and the ::before to create the shimmer along the image.</p>
+
+            </div>
+
+            <!--Flash Effect-->
+            <h2>Flash</h2>
+            <div class="grid">
+                <div class="flash">
+                    <figure>
+                        <img src="./img/Portrait.jpg" loading="lazy" alt="Picture of me in a clone trooper helmet painted red.">
+                    </figure>
+                </div>
+
+                <div>
+                    <img src="./img/Flash.png" loading="lazy" alt="Code snippet of the flash effect">
+                </div>
+            </div>
+
+            <!--Shine Effect-->
+            <h2>Shine</h2>
+            <div class="grid">
+                <div class="shine">
+                    <figure>
+                        <img src="./img/Portrait.jpg" loading="lazy" alt="Picture of me in a clone trooper helmet painted red.">
+                    </figure>
+                </div>
+
+                <div>
+                    <img src="./img/Shine.png" loading="lazy" alt="Code snippet of the shine effect">
+                </div>
+            </div>
+
+            <div>
+
+                <p>These hover effects can also be stacked on top of each other. I already teased this back with the rotate images but you can zoom and filter, filter and rotate, even give special effects and filter! With such a wide array of possibilities, you should have no problem getting the right effect for you!</p>
+
+            </div>
+
+            <!--Combined Effects-->
+            <h2>Combo</h2>
+            <div class="grid">
+                <div class="combo">
+                    <figure>
+                        <img src="./img/Portrait.jpg" loading="lazy" alt="Picture of me in a clone trooper helmet painted red.">
+                    </figure>
+                </div>
+
+                <div>
+                    <img src="./img/Combo1.png" loading="lazy" alt="Code snippet of the combined effects">
+                </div>
+
+                <div>
+                    <img src="./img/Combo2.png" loading="lazy" alt="Code snippet of the combined effects">
+                </div>
             </div>
 
         </article>
 
     </main>
 
+    <!--Contact Form: Where viewers can reach out to me-->
     <section id="contact">
         <h2>Contact Me:</h2>
         <form id="contactForm" name="contactForm" data-netlify="true" method="post">
@@ -171,7 +374,7 @@
     </section>
 
     <footer>
-        ©2025 - Christopher Urban
+        ©2025 - Christopher Urban  Repo: https://github.com/RVCC-IDMX/about-me-curban2336
     </footer>
 
 </body>

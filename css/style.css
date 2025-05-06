@@ -1,3 +1,4 @@
+/* Basic Page Structure */
 body {
     background-color: #00f58d;
     color: black;
@@ -25,6 +26,9 @@ header{
     
 }
 
+
+/* Portrait and Footer */
+
 #hero,footer{
     background-color:#2db57b;
     text-align:center;
@@ -35,7 +39,12 @@ header{
 #hero img{
     width:300px;
     max-width: 100%;
+    border: 1px solid #2db57b;
+    border-radius: 20px;
 }
+
+
+/* Bio */
 
 #bio{
     text-align:center;
@@ -44,6 +53,9 @@ header{
 #bio h2{
     margin:0.5ex;
 }
+
+
+/* Embedded Video */
 
 #video{
     margin: 0 auto;
@@ -55,12 +67,16 @@ header{
     margin:0.1em;
 }
 
+
+/* Video Wrapped Frame */
+
 .videowrapper{
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 25px;
     height: 0px;
     border: 6px outset #a04535;
+    background-color: #4b3632;
 }
 
 .videowrapper iframe{
@@ -77,6 +93,9 @@ header{
     margin:0.1em;
 }
 
+
+/* Hobbies */
+
 #hobbies{
     display: flex;
     flex-direction:column;
@@ -91,7 +110,7 @@ header{
 
 #hobbies ul li {
     color: rgb(150,0,0);
-    text-align:center;
+    text-align:left;
 }
 
 #hobbies ul li:nth-child(3n-1){
@@ -101,6 +120,9 @@ header{
 #hobbies ul li:nth-child(3n){
     color: rgb(10,10,180);
 }
+
+
+/* Image Gallery */
 
 #gallery{
     border: 4px solid #a04535;
@@ -113,6 +135,15 @@ header{
 
 #gallery img{
     max-width:100%;
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#gallery img:hover{
+    -webkit-filter: sepia(0);
+    filter: sepia(0);
 }
 
 #gallery figure{
@@ -123,7 +154,10 @@ header{
     font-size: 2rem;
 }
 
-#litipsum{
+
+/* Image Hover Blog */
+
+#imageHover{
     border: 4px solid #a04535;
     margin-bottom:2rem;
     display: flex;
@@ -132,31 +166,36 @@ header{
     background-color: #2db57b;
 }
 
-#litipsum div{
+#imageHover img{
+    width: 300px;
+    height: auto;
+}
+
+#imageHover div{
     padding:2rem;
     max-width:60rem;
     margin: 0 auto;
 }
 
-#litipsum div p{
-    padding:0.3rem 0;
+#imageHover div p{
+    padding:0.3rem;
 }
 
-#litipsum h2{
+#imageHover h2, #imageHover div h2{
     color:black;
     background-color:#a04535;
     font-style: italic bold;
     font-size:3em;
     padding:.3em;
     margin:0.1em;
-    line-height:.65;
+    line-height:.8;
     border: 3px outset #4b3632;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
     border-top-left-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
 }
 
-#litipsum div p:nth-child(2n+1):first-letter{
+#imageHover div p:nth-child(2n+1):first-letter{
     color:#4b3632;
     background-color:#2db57b;
     float:left;
@@ -172,6 +211,365 @@ header{
     border-top-right-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
 }
+
+
+/* Image Hover Image Effects */
+
+#imageHover .grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin:0;
+}
+
+#imageHover .container {
+    position: relative;
+    width: 80%;
+}
+  
+.image {
+    display: block;
+    width: 800px;
+    height: auto;
+}
+
+
+/* Overlay */
+
+.overlay {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 4px;
+    right: 0;
+    width: 240px;
+    height: 360px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: red;
+}
+
+.container .overlay:hover {
+    opacity: 1;
+}
+
+
+/* Zoom In & Out */
+
+#imageHover .zoom1, #imageHover .zoom2{
+    display: flex;
+    padding: 0;
+    width:100%;
+    justify-content: center;
+}
+
+.zoom1 figure, .zoom2 figure{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.zoom1 figure img{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom1 figure:hover img{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.zoom2 figure img{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.zoom2 figure:hover img{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+/* Spin */
+
+#imageHover .spin{
+    display: flex;
+    padding: 0;
+    width:100%;
+    justify-content: center;
+}
+
+.spin figure{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.spin figure img{
+    -webkit-transform: rotate(15deg) scale(1.3);
+    transform: rotate(15deg) scale(1.3);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.spin figure:hover img{
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+}
+
+
+/* Filters */
+
+#imageHover .gray, #imageHover .sepia, #imageHover .invert, #imageHover .blur, #imageHover .hrotate, #imageHover .flash, #imageHover .shine, #imageHover .combo{
+    display: flex;
+    padding: 0;
+    width:100%;
+    justify-content: center;
+}
+
+
+/* GrayScale Filter */
+
+.gray figure{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.gray figure img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.gray figure:hover img{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+
+/* Sepia Filter */
+
+.sepia figure{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.sepia figure img{
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.sepia figure:hover img{
+    -webkit-filter: sepia(0);
+    filter: sepia(0);
+}
+
+
+/* Invert Filter */
+
+.invert figure{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.invert figure img{
+    -webkit-filter: Invert(100%);
+    filter: Invert(100%);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.invert figure:hover img{
+    -webkit-filter: Invert(0);
+    filter: Invert(0);
+}
+
+
+/* Blur Filter */
+
+.blur figure{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.blur figure img{
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.blur figure:hover img{
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
+
+
+/* Hue-Rotate Filter */
+
+.hrotate figure{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hrotate figure img{
+    -webkit-filter: hue-rotate(90deg);
+    filter: hue-rotate(90deg);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.hrotate figure:hover img{
+    -webkit-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+}
+
+
+/* Flash */
+
+.flash figure{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.flash figure:hover img{
+    opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/* Shine */
+
+.shine figure{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.shine figure::before{
+    position: absolute;
+	top: 0;
+	left: -80%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+
+.shine figure:hover::before{
+    -webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+
+/* Combo */
+
+.combo figure{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.combo figure img{
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    -webkit-transform: scale(1);
+	transform: scale(1);
+    -webkit-filter: grayscale(60%) blur(5px);
+    filter: grayscale(60%) blur(5px);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.combo figure:hover img{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    -webkit-filter: grayscale(0%) blur(0);
+    filter: grayscale(0%) blur(0);
+}
+
+.combo figure::before{
+    position: absolute;
+	top: 0;
+	left: -80%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+
+.combo figure:hover::before{
+    -webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+
+
+/* Contact Form */
 
 #contact h2{
     margin:0.1em;
@@ -205,7 +603,7 @@ fieldset{
 
 legend{
     background-color: #4b3632;
-    color: #2db57b;
+    color: #00f58d;
 }
 
 #contact ul{
@@ -219,14 +617,16 @@ legend{
 
 #contact button{
     background-color:#4b3632;
-    color:#2db57b;
+    color:#00f58d;
     border: 2px solid #a04535;
     max-width: 400px;
     justify-self: center;
     width: 50%;
 }
 
+
 /* Tablet Size */
+
 @media  screen and (min-width:60em){
     #gallery figure{
         display:grid;
@@ -243,14 +643,49 @@ legend{
         width: 100%;
     }
 
-    #litipsum div{
+    #imageHover div{
         max-width: 100%;
-        columns: 20rem;
+    }
+
+    #imageHover img{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 500px;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 30px;
+        bottom: 0;
+        left: 8px;
+        right: 40px;
+        width: 85%;
+        height: 84%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: red;
+    }
+
+    .zoom1 figure, .zoom2 figure, .spin figure, .gray figure, .sepia figure, .invert figure, .blur figure, .hrotate figure, .flash figure, .shine figure, .combo figure{
+        width: 500px;
+        height: 600px;
+        overflow: hidden;
     }
 }
 
 
+/* Desktop Size */
+
 @media screen and (min-width:100em){
+    #bio{
+        font-size: 1.3rem;
+    }
+    #hobbies ul li {
+        font-size: 1.3rem;
+    }
     #gallery{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -264,5 +699,26 @@ legend{
     }
     #video{
         width: 70%;
+    }
+    #imageHover .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #imageHover div p{
+        margin-left: 5rem;
+        margin-right: 5rem;
+        font-size: 1.3rem;
+    }
+    .overlay {
+        position: absolute;
+        top: 30px;
+        bottom: 0;
+        left: 8px;
+        right: 60px;
+        width: 85%;
+        height: 55%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: red;
     }
 }
