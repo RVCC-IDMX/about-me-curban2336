@@ -680,6 +680,12 @@ legend{
 /* Desktop Size */
 
 @media screen and (min-width:100em){
+    #bio{
+        font-size: 1.3rem;
+    }
+    #hobbies ul li {
+        font-size: 1.3rem;
+    }
     #gallery{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -697,6 +703,11 @@ legend{
     #imageHover .grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    #imageHover div p{
+        margin-left: 5rem;
+        margin-right: 5rem;
+        font-size: 1.3rem;
     }
     .overlay {
         position: absolute;
